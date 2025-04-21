@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="d-flex center justify-content-center m-4">Cadastro da Saúde</h1>
+
+    <div class="d-flex justify-content-center text-center p-2 m-4">
+        <form class="p-5 m-3 bg-dark rounded" action="formulario.php" method="get"> 
+            <h5 class="text-white p-1 d-flex justify-content-start">Nome Completo</h5>
+                <input class="rounded" type="text" placeholder="Digite o seu nome" name="nome" required>
+            <h5 class="text-white p-1 d-flex justify-content-start">Informe a sua idade</h5>
+                <input class=" rounded d-flex justify-content-start" type="date" required>
+            <h5 class="text-white p-1 d-flex justify-content-start">E-mail</h5>
+                <input class="rounded" type="email" placeholder="Digite o seu email" id="mail" name="mail" required>
+            <h5 class="text-white p-1 d-flex justify-content-start">Senha</h5>
+                <input class="rounded" type="password" placeholder="Digite a sua senha"  id="pass" name="password" required>
+            <h5 class=" text-white p-1 d-flex justify-content-start">Parentesco</h5>
+                <input class="rounded d-flex justify-content-start" type="text" placeholder="Nome Completo" name="parente" required>
+            <h5 class="text-white p-1 d-flex justify-content-start">Cadastro do SUS</h5>
+                <input class="rounded" type="text" placeholder="Digite seu código SUS" name="codigo" required>
+            <h5 class="text-white p-1 d-flex justify-content-start">CPF</h5>
+                <input class="d-flex justify-content-center rounded" type="text" placeholder="Digite seu CPF" name="cpf" required>
+                <button class="btn btn-success m-3" type="submit">Enviar</button>
+            <p><a href="index.php" target="blank" class="">Volte para a área PHP</a></p>                                             
+        </form>
+    </div>
+</body>
+</html>
