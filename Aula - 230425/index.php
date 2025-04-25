@@ -1,0 +1,20 @@
+<?php
+    require_once 'Fabricante.php';
+
+    $fabricante = new Fabricante;
+    $fabricante->setNome("Sony");
+    $fabricante->setEndereco("Rua Qualquer, 80");
+    $fabricante->setDocumento("0303030303");
+    echo ($fabricante->__toString());
+
+    require_once 'Produto.php';
+    $produto = new Produto("Mouse Óptico", 99.9, 2);
+    $produto->setFabricante($fabricante);
+    echo("<p>{$produto}</p>");
+
+    require_once 'Eletronico.php';
+
+    $eletronico = new Eletronico("Carregador rápido USB-C", 30.9, 10, "bivolt");
+    $eletronico->setFabricante($fabricante);
+    print("<p> {$eletronico} </p>");
+?>
