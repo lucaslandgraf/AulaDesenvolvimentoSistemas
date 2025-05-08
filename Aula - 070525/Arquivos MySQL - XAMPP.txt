@@ -1,0 +1,8 @@
+CREATE Table fabricante(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    endereco VARCHAR(255),
+    documento VARCHAR(255)
+);
+
+SELECT * FROM fabricante;
